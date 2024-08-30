@@ -1,15 +1,15 @@
-###  Multicast Socket
+# Multicast Socket
 A MulticastSocket is a datagram socket that is convenient for sending and receiving IP multicast datagrams. The MulticastSocket constructors create a socket with appropriate socket options enabled that make it suitable for receiving multicast datagrams.
 
 ![IP MultiCast Architecture](/public/multicastjpg.jpg)
 
-### 1.Multicast Addresses and Groups
+## 1.Multicast Addresses and Groups
 
 - **Multicast Groups**:A multicast group is essentially a set of receivers that are interested in a particular stream of data. Each group is identified by a unique multicast address.
 
 -A set of devices that have joined a multicast address to receive data sent to that address.
 
-### 2.Examples of Multicast Groups in Use
+## 2.Examples of Multicast Groups in Use
 - **Streaming Media**: A server streaming a live event might use a multicast address like 224.1.1.1. All clients who want to watch the event would join the multicast group for 224.1.1.1, and the server sends the video stream to this address. The network then efficiently distributes the stream to all members of the group.
 
 ### 3.Multicast Addresses
